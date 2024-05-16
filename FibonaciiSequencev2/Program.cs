@@ -1,5 +1,5 @@
 ﻿namespace FibonacciSequence
-    // I love tacos <3
+    // I love tacos <3 
 {
     class Program
     {
@@ -16,17 +16,18 @@
 
             negativeFibNumbers.Add(0);
             negativeFibNumbers.Add(1);
+
             // variables for user defined list length and to break out of while loop when conditions are met 
             int userInput = 0;
             bool positiveControl = true;
-            bool negativeControl = true;
             bool validInput = true;
 
             Console.WriteLine("Welcome to the Fibonacci Sequence. Please enter how many numbers you would like typed out...");
-           
+            string input = Console.ReadLine();
+
             while (validInput)
             {
-                string input = Console.ReadLine();
+
                 if (int.TryParse(input, out userInput))
                 {
                     validInput = false;
@@ -34,8 +35,16 @@
                 else
                 {
                     Console.WriteLine("Invalid input, please enter a valid number.");
+                    input = Console.ReadLine();
                 }
+                if (userInput < 0)
+                {
+                    validInput = true;
+                    Console.WriteLine("Invalid input, please enter a positive number.");
+                    input = Console.ReadLine();
+                } 
             }
+
             if (userInput >= 0)
             {
                 while (positiveControl)
@@ -50,21 +59,7 @@
                         positiveControl = false;
                 }
             }
-
-            else if (userInput < 0)
-            {
-                while (negativeControl)
-                {
-                    // loops through list generating numbers, starts at 2 since first two numbers are already populated in list 
-                    for (int i = 2; i < -userInput; i++)
-                    {
-                        // adds numbers to list after calculating their values
-                        negativeFibNumbers.Add(negativeFibNumbers[i - 2] + negativeFibNumbers[i - 1]);
-                    }
-                        negativeControl = false;
-                }
-            }
-
+           
             // writes list to console 
             // checks if user is asking for only first number in Fibonacci Sequence and will only show position 0 in list
             if (userInput == 1)
@@ -85,13 +80,6 @@
                     Console.Write(number + " ");
                 }
             }
-            if (userInput < 0)
-            {
-                foreach (int number in negativeFibNumbers)
-                {
-                    Console.Write(number + " ");
-                }
-            }            
         }
     }
 }
