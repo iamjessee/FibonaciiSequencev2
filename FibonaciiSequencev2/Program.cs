@@ -14,9 +14,6 @@
             fibNumbers.Add(0);
             fibNumbers.Add(1);
 
-            negativeFibNumbers.Add(0);
-            negativeFibNumbers.Add(1);
-
             // variables for user defined list length and to break out of while loop when conditions are met 
             int userInput = 0;
             bool positiveControl = true;
