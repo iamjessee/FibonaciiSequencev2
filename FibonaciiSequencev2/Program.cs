@@ -1,5 +1,5 @@
 ﻿namespace FibonacciSequence
-    // i like tacos 
+    // I love tacos <3
 {
     class Program
     {
