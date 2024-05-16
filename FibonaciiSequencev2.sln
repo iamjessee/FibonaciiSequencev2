@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonaciiSequencev2", "FibonaciiSequencev2\FibonaciiSequencev2.csproj", "{6E2E7BE8-4E78-42B7-BE9C-87C1877D6112}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2E7BE8-4E78-42B7-BE9C-87C1877D6112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2E7BE8-4E78-42B7-BE9C-87C1877D6112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2E7BE8-4E78-42B7-BE9C-87C1877D6112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2E7BE8-4E78-42B7-BE9C-87C1877D6112}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02C0BEAD-5167-4ACE-A183-04DC8B5B51F0}
+	EndGlobalSection
+EndGlobal
