@@ -29,7 +29,6 @@
             // verifies user input is a valid in and throws an error if its a negative number or not a valid int
             while (validInput)
             {
-
                 if (int.TryParse(input, out userInput))
                 {
                     validInput = false;
