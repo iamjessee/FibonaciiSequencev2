@@ -22,9 +22,11 @@
             bool positiveControl = true;
             bool validInput = true;
 
+            // greets user and asks for initial input 
             Console.WriteLine("Welcome to the Fibonacci Sequence. Please enter how many numbers you would like typed out...");
             string input = Console.ReadLine();
 
+            // verifies user input is a valid in and throws an error if its a negative number or not a valid int
             while (validInput)
             {
 
@@ -44,22 +46,19 @@
                     input = Console.ReadLine();
                 } 
             }
-
-            if (userInput >= 0)
+            // initiates and writes Fibonacci Sequence based on user input
+            while (positiveControl)
             {
-                while (positiveControl)
+            // loops through list generating numbers, starts at 2 since first two numbers are already populated in list 
+                for (int i = 2; i < userInput; i++)
                 {
-                    // loops through list generating numbers, starts at 2 since first two numbers are already populated in list 
-                    for (int i = 2; i < userInput; i++)
-                    {
 
-                        // adds numbers to list after calculating their values
-                        fibNumbers.Add(fibNumbers[i - 1] + fibNumbers[i - 2]);
-                    }
-                        positiveControl = false;
+                 // adds numbers to list after calculating their values
+                 fibNumbers.Add(fibNumbers[i - 1] + fibNumbers[i - 2]);
                 }
+                 positiveControl = false;
             }
-           
+                     
             // writes list to console 
             // checks if user is asking for only first number in Fibonacci Sequence and will only show position 0 in list
             if (userInput == 1)
