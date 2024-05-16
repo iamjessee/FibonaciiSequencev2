@@ -51,7 +51,6 @@
             // loops through list generating numbers, starts at 2 since first two numbers are already populated in list 
                 for (int i = 2; i < userInput; i++)
                 {
-
                  // adds numbers to list after calculating their values
                  fibNumbers.Add(fibNumbers[i - 1] + fibNumbers[i - 2]);
                 }
