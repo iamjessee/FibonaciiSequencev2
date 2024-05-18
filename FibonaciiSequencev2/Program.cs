@@ -1,4 +1,6 @@
-﻿namespace FibonacciSequence
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace FibonacciSequence
 {
     class Program
     {
@@ -56,9 +58,21 @@
                 positiveControl = false;
             }
 
+            if (userInput == 0)
+            {
+                Console.WriteLine("No numbers to display.");
+            }
+            else
+            {
+                for (int i = 0; i < userInput; i++)
+                {
+                    Console.Write(fibNumbers[i] + " ");
+                }
+            }
+
             // writes list to console
             // checks if user is asking for no numbers
-            if (userInput == 0)
+            /*if (userInput == 0)
             {
                 Console.WriteLine("No numbers to display.");
             }
@@ -80,7 +94,7 @@
                 {
                     Console.Write(number + " ");
                 }
-            }
+            }*/
         }
     }
 }
