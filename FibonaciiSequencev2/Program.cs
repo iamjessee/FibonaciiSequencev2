@@ -57,12 +57,17 @@
             }
 
             // writes list to console
-            // checks if user is asking for only first number in Fibonacci Sequence and will only show position 0 in list
+            // checks if user is asking for no numbers
+            if (userInput == 0)
+            {
+                Console.WriteLine("No numbers to display.");
+            }
+            // checks if user is asking for only the first number in Fibonacci Sequence and will only show position 0 in list
             if (userInput == 1)
             {
                 Console.Write(fibNumbers[0]);
             }
-            // checks if user is asking for only first two number in Fibonacci Sequence and will only show position 0 & 1 in list
+            // checks if user is asking for only the first two number in Fibonacci Sequence and will only show position 0 in list
             if (userInput == 2)
             {
                 Console.Write(fibNumbers[0] + " ");
