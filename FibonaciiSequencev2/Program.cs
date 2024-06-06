@@ -58,10 +58,12 @@ namespace FibonacciSequence
                 positiveControl = false;
             }
 
+            // checks if user is asking for no numbers 
             if (userInput == 0)
             {
                 Console.WriteLine("No numbers to display.");
             }
+            // checks for any other user input and outputs appropriate numbers in Fibonacci Sequence
             else
             {
                 for (int i = 0; i < userInput; i++)
@@ -69,32 +71,6 @@ namespace FibonacciSequence
                     Console.Write(fibNumbers[i] + " ");
                 }
             }
-
-            // writes list to console
-            // checks if user is asking for no numbers
-            /*if (userInput == 0)
-            {
-                Console.WriteLine("No numbers to display.");
-            }
-            // checks if user is asking for only the first number in Fibonacci Sequence and will only show position 0 in list
-            if (userInput == 1)
-            {
-                Console.Write(fibNumbers[0]);
-            }
-            // checks if user is asking for only the first two number in Fibonacci Sequence and will only show position 0 in list
-            if (userInput == 2)
-            {
-                Console.Write(fibNumbers[0] + " ");
-                Console.Write(fibNumbers[1]);
-            }
-            // checks if user is asking for more than first two numbers in Fibonacci Sequence and will output all requested positions
-            if (userInput > 2)
-            {
-                foreach (int number in fibNumbers)
-                {
-                    Console.Write(number + " ");
-                }
-            }*/
         }
     }
 }
